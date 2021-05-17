@@ -1,0 +1,31 @@
+{
+  "name": "protractor-boilerplate",
+  "version": "1.0.0",
+  "description": "A sample protractor project to get things running for any UI Testing Project",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "protractor temp/protractor.conf.js || exit 0",
+    "posttest": "rd /s temp",
+    "update-webdriver": "wenbdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haisumabbas/protractor-boilerplate.git"
+  },
+  "author": "Haisum Abbas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haisumabbas/protractor-boilerplate/issues"
+  },
+  "homepage": "https://github.com/haisumabbas/protractor-boilerplate#readme",
+  "dependencies": {
+    "@types/jasmine": "^3.7.4",
+    "@types/jasminewd2": "^2.0.9",
+    "@types/node": "^15.3.0",
+    "jasmine": "^3.7.0",
+    "protractor": "^7.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
